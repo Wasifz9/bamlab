@@ -13,7 +13,8 @@ class App extends React.Component {
         
           <div className = "Page" id ="landing">
               <div className = "home"> 
-                <Fade> <div className = "pageTitle">Eli Westlake</div></Fade>
+                <Fade> <div className = "pageTitle">Your Name</div></Fade>
+                <Fade up delay = {500}> <div className = "underline"></div></Fade>
                 <Fade up delay = {500}> 
                 <ul className = "homeNav">
                     <li> your.email@gmail.com </li> 
@@ -25,7 +26,8 @@ class App extends React.Component {
         
         <Fade left> <div className = "sectionTitle">01. Work Experience</div> </Fade>
         <div className = "Page" id = "workExp">
-          <Fade up delay = {500}> 
+        <Fade up delay = {500}> 
+        <div className = "underline"></div>
             <div className = 'section'>
                       <p className = 'subtitle'>
                           RBC Analytics and Innovation
@@ -50,8 +52,7 @@ class App extends React.Component {
 
 
               </div>
-           </Fade>
-           <Fade up up delay = {500}>
+       
             <div className = 'section'>
                       <p className = 'subtitle'>
                           RBC Analytics and Innovation
@@ -74,8 +75,7 @@ class App extends React.Component {
 
 
               </div>
-           </Fade>
-           <Fade up up delay = {500}>
+        
             <div className = 'section'>
                       <p className = 'subtitle'>
                           RBC Analytics and Innovation
@@ -100,9 +100,10 @@ class App extends React.Component {
               </div>
            </Fade>
         </div>  
-        <Fade right> <div className = "sectionTitle" style = {{textAlign: 'right'}}>02. Extra-Curriculars</div> </Fade>
+        <Fade right> <div className = "sectionTitle" id = "right-align">02. Extra-Curriculars</div> </Fade>
         <div className = "Page" id = "extraCurr">
-        <Fade left>
+        <Fade up delay = {500}> <div className = "underline"></div></Fade>
+        <Fade left delay = {500}>
           <div className = 'extrasection'>
           <p className = 'subtitle'>
                           Food Drive
@@ -176,10 +177,11 @@ class App extends React.Component {
           </Fade>
         </div>
 
-        <Fade up>
+        <Fade up delay = {500}>
         
         <div className = "sectionTitle">03. Education</div>
         <div id = "education">
+        <Fade up delay = {500}> <div className = "underline"></div></Fade>
           <div className = 'section' style = {{width: '90%', padding: 20 + 'px', margin: 30 + 'px'}}>
                         <p className = 'subtitle'>
                             University of Toronto

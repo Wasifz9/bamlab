@@ -15,6 +15,10 @@
 }
 
 .home{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 .pageTitle{
@@ -23,6 +27,7 @@
 .sectionTitle{
   font-weight:lighter;
   margin: 10px 20px; 
+  margin-bottom: 5px;
 }
 
 .homeNav{
@@ -34,7 +39,11 @@
   padding: 0;
 }
 
-li{
+.underline{
+  background-color: black;
+  height:2px;
+  margin-top: 0px;
+  align-self: center;
 }
 
 
@@ -51,10 +60,13 @@ li{
 
 @media screen and (min-width: 320px) {
   .pageTitle{
-    font-size: calc(70px + 6 * ((100vw - 320px) / 680));
+    font-size: calc(60px + 6 * ((100vw - 320px) / 680));
   }
   .sectionTitle{
     font-size: calc(35px + 6 * ((100vw - 320px) / 680));
+    margin: 30px 20px;
+    margin-bottom: 5px;
+    text-align: center;
   }
   .info{
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -62,6 +74,13 @@ li{
   body{
     padding: 0px 0px 100px 0px;
   }
+  .underline{
+    width: 80%;
+  }
+  #right-align{
+    text-align: center;
+  }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -70,6 +89,7 @@ li{
   }
   .sectionTitle{
     font-size: 55px;
+    text-align: left;
   }
   .App{
     width: 80%
@@ -80,7 +100,14 @@ li{
   body{
     padding: 0px 0px 100px 0px;
   }
+  .underline{
+    width: 100%;
+  }
+  #right-align{
+    text-align: right;
+  }
 }
+
 
 
 .jobtitle {
@@ -161,4 +188,5 @@ li{
 #education{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
