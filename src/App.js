@@ -43,9 +43,9 @@ function App() {
 
                         </Fade>
                     </div>
-                    <Reveal effect="fadedInUp" >
+        
                         <button className="entryButton" onClick={() => setActive('researchGoals')} > ENTER > </button>
-                    </Reveal>
+    
                     
                 </div>
                 <div className={Active == 'researchGoals' ? 'researchGoalsContainer show' : 'researchGoalsContainer'}>

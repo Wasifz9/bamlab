@@ -38,7 +38,7 @@
   list-style-type: none;
   overflow: hidden;
   justify-content: center;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0px;
   color: black;
   font-weight: bold;
@@ -65,7 +65,8 @@
   color: rgb(216, 216, 216);
   opacity: 0;
   transition-duration: 0.4s;
-  animation: fadeIn 5s linear;
+  animation: fadeIn 3s forwards;
+  animation-delay:1.5s;
 }
 
 .entryButton:hover{
@@ -333,6 +334,7 @@
   margin-top: none;
   padding: 10% 0%; 
   animation: pulse-quiet infinite 4s;
+  z-index: 1;
 }
 
 .mainNav li{
@@ -401,12 +403,13 @@
   background-color:white;
   animation: fadeIn forwards 2s;
   animation-delay: 1s;
+  z-index: 0;
 }
 
 #profilePic{
   height:250px;
   width: auto;
-  margin:20px;
+  margin-bottom: 20px;
   border-radius: 5px;
   -webkit-box-shadow: -1px 10px 44px -12px rgba(158,204,235,0.31);
   -moz-box-shadow: -1px 10px 44px -12px rgba(158,204,235,0.31);
@@ -421,12 +424,14 @@
 
 .profileSection .info{
   font-weight: bold;
+  font-size: 14px;
 }
 
 .innerProfContainer{
   display:flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width:100vw;
 }
 
@@ -448,4 +453,8 @@
   color: rgb(233, 33, 33);
   cursor: pointer;
 }
- 
+
+.profileSection.hidden{
+
+
+}
