@@ -1,8 +1,18 @@
 import React from 'react';
 
 function transitionPage(props) {
+
+    function animateOut(page){
+        document.getElementById("transPage").classList.toggle("reveal");
+       
+        setTimeout(function() {
+            props.setActive(page)
+        },1500)
+    }
+
+
     return (
-        <div className = "transitionPageContainer"> 
+        <div id = 'transPage' className = {props.active == 'researchGoals' ? "transitionPageContainer reveal" : "transitionPageContainer" }> 
             <div className="transitionpage">
                 <div className="innerContainer">
                     <div className="pageTitle">Research Goals </div>
@@ -18,13 +28,13 @@ function transitionPage(props) {
                         <li onClick={() => props.setActive('bamlab')}> 
                             BamLab
                         </li>
-                        <li onClick={() => props.setActive('profile')}>
+                        <li onClick={() => animateOut('profile')}>
                             Dr. Zulkernine
                         </li>
                     </ul>
             </div>
         </div>
-        
+
     );
 }
 

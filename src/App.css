@@ -6,7 +6,10 @@
 
 .Page{
   min-height: 100vh;
-  width: 100%
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #landing{
@@ -21,7 +24,14 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
+  opacity: 0;
+  transition: ease 0.8s;
 }
+.home.reveal{
+  opacity: 1;
+}
+
+
 .pageTitle{
   margin: 0px;
   font-weight: bold;
@@ -65,8 +75,8 @@
   color: rgb(216, 216, 216);
   opacity: 0;
   transition-duration: 0.4s;
-  animation: fadeIn 3s forwards;
-  animation-delay:1.5s;
+  animation: fadeIn 1s forwards;
+  animation-delay:1s;
 }
 
 .entryButton:hover{
@@ -119,9 +129,6 @@
   .info{
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
-  body{
-    padding: 0px 0px 100px 0px;
-  }
   .underline{
     width: 80%;
   }
@@ -151,9 +158,6 @@
   .info{
     font-size: 16px;
   }
-  body{
-    padding: 0px 0px 100px 0px;
-  }
   .underline{
     width: 100%;
   }
@@ -177,7 +181,6 @@
   border-radius: 10px;
   width: 70%;
   max-width: 800px;
-  background-color: black;
 }
 
 .subtitle {
@@ -282,12 +285,11 @@
 
 .researchGoalsContainer{
   height:100vh;
-  width:0;
   background-color:rgb(22, 22, 22);
   position: absolute;
   left: 0;
   overflow: hidden;
-  transition: ease 0.8s;
+  transition: ease 1s;
   top: 0;
   transition-delay: 0.3s;
 }
@@ -308,9 +310,12 @@
   max-width: 800px;
 }
 
-.transitionPageContainer{
+#transPage{
   display: flex;
   flex-direction: row;
+  opacity: 0;
+  transition: opacity ease 1.5s;
+  transition-delay: 0.8s;
 }
 
 .menuList{
@@ -364,10 +369,11 @@
 }
 
 .profileLargeContainer{
+  display: flex;
+  justify-content: center;
   width: 100vw;
   position:absolute;
   top: 0;
-  height: 0;
   color: black;
   background: linear-gradient(
     90deg,
@@ -375,23 +381,15 @@
     rgba(240, 240, 240) 71%,
     rgba(240, 240, 240, 0.9164259453781513) 100%
   );
-  transition: height ease-out 1s;
+  transition: height ease-in-out 2s;
+  overflow: hidden;
 }
-
-.profileLargeContainer.show-top{
-  height: 100vh; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 .profileSection{
   opacity: 0;
   display:flex;
   flex-direction: row;
   padding: 30px;
-  margin: 20px 0px;
   -webkit-box-shadow: -1px 10px 44px -12px rgba(158,204,235,0.31);
   -moz-box-shadow: -1px 10px 44px -12px rgba(158,204,235,0.31);
   box-shadow: -1px 10px 44px -12px rgba(0,0,0,0.31);
@@ -400,10 +398,7 @@
   width: 70%;
   max-width: 900px;
   min-width: 600px;
-  background-color:white;
-  animation: fadeIn forwards 2s;
-  animation-delay: 1s;
-  z-index: 0;
+  animation: fadeInUp forwards 2s;
 }
 
 #profilePic{
@@ -429,10 +424,19 @@
 
 .innerProfContainer{
   display:flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   width:100vw;
+  opacity: 0;
+  transition: opacity ease 1s;
+  transition-delay: 0.8s;
+}
+.innerProfContainer.reveal{
+  opacity: 1;
+}
+
+#transPage.reveal{
+  opacity: 1;
 }
 
 .NavMenu{
@@ -443,7 +447,7 @@
   list-style-type: none;
   overflow: hidden;
   justify-content: center;
-  position: absolute;
+  position:fixed;
   font-weight: bold;
   color: black;
   transition-duration: 0.5s;
@@ -457,4 +461,8 @@
 .profileSection.hidden{
 
 
+}
+
+.section p{
+  margin: 0px;
 }
