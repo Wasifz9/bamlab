@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/bamlab/static/css/main.e910dff0.chunk.css",
-    "main.js": "/bamlab/static/js/main.0d9ecc7d.chunk.js",
-    "main.js.map": "/bamlab/static/js/main.0d9ecc7d.chunk.js.map",
+    "main.css": "/bamlab/static/css/main.74266530.chunk.css",
+    "main.js": "/bamlab/static/js/main.9f35b419.chunk.js",
+    "main.js.map": "/bamlab/static/js/main.9f35b419.chunk.js.map",
     "runtime-main.js": "/bamlab/static/js/runtime-main.e5cf93cb.js",
     "runtime-main.js.map": "/bamlab/static/js/runtime-main.e5cf93cb.js.map",
-    "static/js/2.aa1ab5cd.chunk.js": "/bamlab/static/js/2.aa1ab5cd.chunk.js",
-    "static/js/2.aa1ab5cd.chunk.js.map": "/bamlab/static/js/2.aa1ab5cd.chunk.js.map",
+    "static/js/2.3a98ad27.chunk.js": "/bamlab/static/js/2.3a98ad27.chunk.js",
+    "static/js/2.3a98ad27.chunk.js.map": "/bamlab/static/js/2.3a98ad27.chunk.js.map",
     "static/js/3.64638a16.chunk.js": "/bamlab/static/js/3.64638a16.chunk.js",
     "static/js/3.64638a16.chunk.js.map": "/bamlab/static/js/3.64638a16.chunk.js.map",
     "index.html": "/bamlab/index.html",
-    "static/css/main.e910dff0.chunk.css.map": "/bamlab/static/css/main.e910dff0.chunk.css.map",
-    "static/js/2.aa1ab5cd.chunk.js.LICENSE.txt": "/bamlab/static/js/2.aa1ab5cd.chunk.js.LICENSE.txt",
+    "static/css/main.74266530.chunk.css.map": "/bamlab/static/css/main.74266530.chunk.css.map",
+    "static/js/2.3a98ad27.chunk.js.LICENSE.txt": "/bamlab/static/js/2.3a98ad27.chunk.js.LICENSE.txt",
     "static/media/profilePic.3b0904bf.jpg": "/bamlab/static/media/profilePic.3b0904bf.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e5cf93cb.js",
-    "static/js/2.aa1ab5cd.chunk.js",
-    "static/css/main.e910dff0.chunk.css",
-    "static/js/main.0d9ecc7d.chunk.js"
+    "static/js/2.3a98ad27.chunk.js",
+    "static/css/main.74266530.chunk.css",
+    "static/js/main.9f35b419.chunk.js"
   ]
 }
