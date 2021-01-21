@@ -1,6 +1,7 @@
 .App {
   padding: 0px;
   margin: 0px;
+  max-width: 1400px;
 }
 
 .Page{
@@ -179,12 +180,11 @@
 #extraCurr{
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   min-height: 0px;
-  margin-bottom: 25px;
+  margin: 0px 0px 25px 0px;
   max-width: 1400px;
 }
 
