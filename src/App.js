@@ -44,7 +44,7 @@ function App() {
                         </Fade>
                     </div>
                     <Reveal effect="fadedInUp" >
-                        <button className="entryButton" onClick={() => setActive('researchGoals')} > ENTER >> </button>
+                        <button className="entryButton" onClick={() => setActive('researchGoals')} > ENTER > </button>
                     </Reveal>
                     
                 </div>
@@ -52,7 +52,7 @@ function App() {
                     {Active == 'researchGoals' && <TransitionPage setActive = {setActive}/>}
                </div>
                <div className={Active == 'profile' ? 'profileLargeContainer show-top' : 'profileLargeContainer'}>
-                    {Active == 'profile' && <Profile setActive = {setActive}/>}
+                    {Active == 'profile' && <Profile setActive = {setActive}/> }
                </div>
                {/*<div className={Active == 'bamlab' ? 'profileLargeContainer show-top' : 'profileLargeContainer'}>
                     {Active == 'bamlab' && <Profile setActive = {setActive}/>}
