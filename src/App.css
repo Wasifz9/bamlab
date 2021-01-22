@@ -119,9 +119,10 @@
 @media screen and (min-width: 320px) and (max-width: 1000px) {
   .pageTitle{
     font-size: calc(40px + 6 * ((100vw - 320px) / 680));
+    text-align: center;
   }
   .sectionTitle{
-    font-size: calc(30px + 6 * ((100vw - 320px) / 680));
+    font-size: calc(22px + 6 * ((100vw - 320px) / 680));
     margin: 30px 20px;
     margin-bottom: 5px;
     text-align: center;
@@ -149,7 +150,7 @@
     font-size: 60px;
   }
   .sectionTitle{
-    font-size: 40px;
+    font-size: 32px;
     text-align: left;
   }
   .App{
@@ -165,7 +166,7 @@
     text-align: right;
   }
   .jobtitle {
-    font-size:28px;
+    font-size:24px;
   }
 }
 
@@ -180,11 +181,10 @@
   border-color: white;
   border-radius: 10px;
   width: 70%;
-  max-width: 800px;
 }
 
 .subtitle {
-  font-size: 25px;
+  font-size: 30px;
   margin: 0px;
   font-weight: bold;
 }
@@ -303,19 +303,20 @@
   flex-direction: column;
   opacity: 0;
   margin: 20px;
+  margin-top: 70px;
   padding: 20px;
-  animation: fadeIn 2s forwards;
+  animation: fadeInUp 2s forwards;
   text-align: left;
   animation-delay:0.8s;
-  max-width: 800px;
+  max-width: 1000px;
+
 }
 
 #transPage{
   display: flex;
   flex-direction: row;
   opacity: 0;
-  transition: opacity ease 1.5s;
-  transition-delay: 0.8s;
+  transition: opacity linear 0.3s;
 }
 
 .menuList{
@@ -371,17 +372,13 @@
 .profileLargeContainer{
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 0;
   position:absolute;
-  top: 0;
+  right: 0;
   color: black;
-  background: linear-gradient(
-    90deg,
-    rgba(240, 240, 240) 0%,
-    rgba(240, 240, 240) 71%,
-    rgba(240, 240, 240, 0.9164259453781513) 100%
-  );
-  transition: height ease-in-out 2s;
+  top: 0;
+  background: rgb(240,240,240);
+  transition: width ease-out 1s;
   overflow: hidden;
 }
 
@@ -395,10 +392,8 @@
   box-shadow: -1px 10px 44px -12px rgba(0,0,0,0.31);
   border-color: white;
   border-radius: 10px;
-  width: 70%;
   max-width: 900px;
-  min-width: 600px;
-  animation: fadeInUp forwards 2s;
+  animation: fadeInUp forwards 1s 1.2s;
 }
 
 #profilePic{
@@ -428,15 +423,17 @@
   flex-direction: column;
   width:100vw;
   opacity: 0;
-  transition: opacity ease 1s;
-  transition-delay: 0.8s;
+  transition: opacity linear 0.6s;
+  padding-bottom: 100px;
 }
 .innerProfContainer.reveal{
   opacity: 1;
+  transition: opacity linear 1s 1s;
 }
 
 #transPage.reveal{
   opacity: 1;
+  transition: opacity linear 1s 1.2s;
 }
 
 .NavMenu{
@@ -451,18 +448,95 @@
   font-weight: bold;
   color: black;
   transition-duration: 0.5s;
+  z-index: 0;
 }
+
+
 
 .NavMenu li:hover{
   color: rgb(233, 33, 33);
   cursor: pointer;
 }
 
-.profileSection.hidden{
-
-
-}
-
 .section p{
   margin: 0px;
 }
+
+.innerProfContainer .underline{
+  width: 50%;
+}
+
+p.info{
+  font-weight: bold;
+}
+
+.navigation{
+  top:0;
+  height: auto;
+  width: 100%;
+  position: fixed;
+  border-bottom:rgba(216, 216, 216, 0.336) solid 0.5px;
+  box-shadow: -1px 10px 44px -12px rgba(53, 53, 53, 0.31);
+
+}
+.navigation p{
+  transition: all ease 0.5s;
+  font-weight: bold;
+  margin: 15px;
+  color: rgba(255, 255, 255, 0.548);
+}
+.navigation p:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+
+.bamLabLargeContainer{
+  display: flex;
+  justify-content: center;
+  width: 0;
+  position:absolute;
+  left: 0;
+  color: black;
+  top: 0;
+  background: rgb(240,240,240);
+  transition: width ease-out 1s;
+  overflow: hidden;
+}
+
+#bamPage{
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  opacity: 0;
+  transition: opacity linear 0.3s;
+}
+#bamPage.reveal{
+  opacity: 1;
+  transition: opacity linear 1s 1.2s;
+}
+
+.BamMenu{
+  top: 0;
+  right: 0;
+  margin: 20px;
+  padding-inline-start: 0;
+  list-style-type: none;
+  overflow: hidden;
+  justify-content: center;
+  position:fixed;
+  font-weight: bold;
+  color: rgb(233, 33, 33);
+  z-index: 0;
+}
+
+.BamMenu li{
+  text-align: right;
+}
+
+.BamMenu li:hover{
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+

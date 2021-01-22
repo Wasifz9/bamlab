@@ -3,26 +3,33 @@ import Pic from './profilePic.jpg';
 import { Fade } from 'react-reveal';
 function Profile(props) {
     const [moreInfo, showMoreInfo] = useState(false);
-    
-    
+    function animateOut(page){
+        document.getElementById("innerProfContainer").classList.toggle("reveal");
+       
+        setTimeout(function() {
+            props.setActive(page)
+        },650)
+    }
+
+        
         return (
-            <div className = { props.active == 'profile' ? "innerProfContainer reveal" : "innerProfContainer"}> 
-                    <Fade top cascade>
-                    <ul className="NavMenu">
-                        <li onClick={() => props.setActive('')}>
+            <div id = "innerProfContainer" className = { props.active == 'profile' ? "innerProfContainer reveal" : "innerProfContainer"}> 
+                <Fade top cascade>
+                   {props.active == 'profile' && <ul className= "NavMenu">
+                        <li onClick={() => animateOut('')}>
                             Home
                         </li>
-                        <li onClick={() => props.setActive('researchGoals')}>
+                        <li onClick={() => animateOut('researchGoals')}>
                             Research Goals
                         </li>
-                        <li>
+                        <li onClick={() => animateOut('bamlab')}>
                             BamLab
-                            </li>
+                        </li>
                         <li>
                             School of Computing
                             </li>
 
-                    </ul>
+                    </ul> }
                 </Fade>
                 <div className = 'Page'>
                 <div className='profileSection'>
@@ -72,27 +79,21 @@ function Profile(props) {
 
         
                 <div className="Page" id="workExp">
-                <div className="sectionTitle">01. Courses</div> 
+                <div className="sectionTitle">01. Administrative Info </div> 
                         <div className="underline"></div>
+
                         <div className='section'>
                             <p className='subtitle'>
-                                RBC Analytics and Innovation
+                                Cognitive Science Program
                         </p>
                             <p className='jobtitle'>
-                                software engineer
+                                Important Information
                         </p>
+                        <br/>
                             <p className='subsubtitle'>
-                                summer '20
-                        </p>
-
-                            <p className='info'>
-
-                                <li>Built Jenkins pipeline to operate with Vault secrets to ensure secure automation and secret management.</li>
-                                <li>Configured Master Jenkins to control Jenkins Agents on different operating systems.  </li>
-                                <li>Containerized Portfolio Insights application on Docker and deployed on Openshift. </li>
-                                <li>Trained in both AWS and Kubernetes while documenting for team use on Confluence. </li>
-                                <li>Presented secret management strategy to senior management and documented Vault tutorial for team use.</li>
-
+                                <li>Detailed Program Information</li>
+                                <li>Course Pre-Requisite Chart</li>
+                                <li>Frequently Asked Questions</li>
                             </p>
 
 
@@ -101,21 +102,21 @@ function Profile(props) {
 
                         <div className='section'>
                             <p className='subtitle'>
-                                RBC Analytics and Innovation
+                                Teaching
                         </p>
                             <p className='jobtitle'>
-                                software engineer
+                                Courses
                         </p>
                             <p className='subsubtitle'>
-                                summer '20
+                                2020 - 2021
                         </p>
-
+                        <br/>
                             <p className='info'>
-                                <li>Built Jenkins pipeline to operate with Vault secrets to ensure secure automation and secret management.</li>
-                                <li>Configured Master Jenkins to control Jenkins Agents on different operating systems.  </li>
-                                <li>Containerized Portfolio Insights application on Docker and deployed on Openshift. </li>
-                                <li>Trained in both AWS and Kubernetes while documenting for team use on Confluence. </li>
-                                <li>Presented secret management strategy to senior management and documented Vault tutorial for team use.</li>
+                                <li>CISC-874/3.0 Foundations of Neural Networks </li>
+                                <li>COGS 100: Introduction to Cognitive Science </li>
+                                <li>COGS-400/3.0 Neural and Genetic Cognitive Models</li>
+                                <li>CISC-452/3.0 Neural and Genetic Computing</li>
+                                <li>CMPE-452/3.0 Neural and Genetic Computing</li>
                             </p>
 
 
@@ -124,21 +125,23 @@ function Profile(props) {
 
                         <div className='section'>
                             <p className='subtitle'>
-                                RBC Analytics and Innovation
+                                Previously Taught
                         </p>
                             <p className='jobtitle'>
-                                software engineer
+                                Courses
                         </p>
                             <p className='subsubtitle'>
-                                summer '20
+                                2017 - 2020
                         </p>
-
+                        <br/>
                             <p className='info'>
-                                <li>Built Jenkins pipeline to operate with Vault secrets to ensure secure automation and secret management.</li>
-                                <li>Configured Master Jenkins to control Jenkins Agents on different operating systems.  </li>
-                                <li>Containerized Portfolio Insights application on Docker and deployed on Openshift. </li>
-                                <li>Trained in both AWS and Kubernetes while documenting for team use on Confluence. </li>
-                                <li>Presented secret management strategy to senior management and documented Vault tutorial for team use.</li>
+                                <li>COGS 100 : Introduction to Cognitive Science</li>
+                                <li>COGS 201: Cognition and Computation  </li>
+                                <li>COGS 300: Programming Cognitive Models </li>
+                                <li>COGS 499: Advanced Undergraduate Project </li>
+                                <li>COGS 400/CISC/CMPE 452: Neural and Genetic Cognitive Models</li>
+                                <li>CISC 874: Neural and Genetic Computing </li>
+                                <li>CISC 432/832: Advanced Database Management Systems</li>
                             </p>
 
 
@@ -146,78 +149,53 @@ function Profile(props) {
                         </div>
                 
                 </div>
-                <div className="sectionTitle" id="right-align">02. Extra-Curriculars</div> 
-                <div className="Page" id="extraCurr">
-                    <div className="underline"></div>
-                    
-                        <div className='extrasection'>
-                            <p className='subtitle'>
-                                Food Drive
-                        </p>
-                            <p className='jobtitle'>
-                                marketing lead
-                        </p>
-                            <p className='subsubtitle'>
-                                fall '20
-                        </p>
-                            <br />
-                            <p className='info'>
-                                Built Jenkins pipeline to operate with Vault secrets to ensure secure automation and secret management.
-                                Configured Master Jenkins to control Jenkins Agents on different operating systems.
-                        </p>
+                <div className="Page" id="workExp">
+                <div className="sectionTitle">02. Awards and Funding </div> 
+                        <div className="underline"></div>
 
+                        <div className='section'>
+                            <p className='subtitle'>
+                                Awards
+                        </p>
+                        <br/>
+                            <p className='subsubtitle'>
+                                <li>Post-doctoral Fellowship award, IBM Canada Research and Development Center (CRDC) and Southern Ontario Smart Computing Innovation Platform (SOSCIP), 2012.</li>
+                                <li>NSERC Post Doctoral Fellowship award (declined to accept the IBM/SOSCIP award), Natural Sciences and Engineering Research, 2012.</li>
+                                <li>NSERC Industrial Research and Discovery Fellowship (IRDF) award, pre-approved, NSERC, 2012.</li>
+                                <li>MITACS Elevate Industrial Postdoctoral Fellowship award, MITACS and CA Technologies, 2010.</li>
+                                <li>NSERC Visiting Fellowship (VF) award, nominated, NSERC, 2010.</li>
+                                <li>Ontario Centres of Excellence (OCE) - Professional Outreach Award, 2008.</li>
+                                <li>Best Paper Award, IEEE SOCNE 07 Workshop at IEEE AINA, 2007, Niagara, Canada.</li>
+                            </p>
 
-                        </div>
-                        <div className='extrasection'>
-                            <p className='subtitle'>
-                                Spero
-                        </p>
-                            <p className='jobtitle'>
-                                finance lead
-                        </p>
-                            <p className='subsubtitle'>
-                                fall '20
-                        </p>
-                            <br />
-                            <p className='info'>
-                                Built Jenkins pipeline to operate with Vault secrets to ensure secure automation and secret management.
-                                Configured Master Jenkins to control Jenkins Agents on different operating systems.
-                        </p>
-                        </div>
-        
-                        <div className='extrasection'>
-                            <p className='subtitle'>
-                                Food Drive
-                        </p>
-                            <p className='jobtitle'>
-                                marketing lead
-                        </p>
-                            <p className='subsubtitle'>
-                                fall '20
-                        </p>
-                            <br />
-                            <p className='info'>
-                                Built Jenkins pipeline to operate with Vault secrets to ensure secure automation and secret management.
-                                Configured Master Jenkins to control Jenkins Agents on different operating systems.
-                        </p>
 
 
                         </div>
-                        <div className='extrasection'>
+
+                        <div className= 'section' >
                             <p className='subtitle'>
-                                Spero
+                                Funding
                         </p>
-                            <p className='jobtitle'>
-                                finance lead
+                        <br/>
+                        <p className='subsubtitle'>
+                                <li>NSERC CRD (Collaborative Research and Development), 2020</li> 
+                                <li>Mitacs Accelerate Grants with CUTRIC and Kings Distributed Systems, 2020</li>
+                                <li>Queen's Research Opportunities Funds (QROF), 2019</li>
+                                <li>New Frontiers in Research Fund (Coinvestigator), 2019</li>
+                                <li>NSERC CREATE (co-PI) on Cybersecurity, 2019</li>
+                                <li>Canadian Urban Transit Research and Innovation Consortium (CUTRIC), 2019</li>
+                                <li>OCE VIP I, 2018</li>
+                                <li>IBM, Mitacs, and CIMVHR Funding, collaborators: University of Manitoba and University of Toronto, 2018</li>
+                                <li>IBM Centre for Advanced Computing (CAS) research grant, 2018</li>
+                                <li>IBM, Mitacs, and CIMVHR Funding, collaborators: University of Manitoba and University of Toronto, 2018</li>
+                                <li>Canada Foundation for Innovation (CFI) Grant, 2018</li>
+                                <li>NSERC Discovery Grant, 2018</li>
+                                <li>IBM CRDC and SOSCIP (Southern Ontario Smart Computing Innovation Platform) Funding, collaborator: Gnowit and IBM, 2017</li>
+                                <li>Research Initiation Grant, School of Computing, Queen's University, 2017</li>
                         </p>
-                            <p className='subsubtitle'>
-                                fall '20
-                        </p>
-                            <br />
-                            <p className='info'>
-                                Built Jenkins pipeline to operate with Vault secrets to ensure secure automation and secret management.
-                                Configured Master Jenkins to control Jenkins Agents on different operating systems.
-                        </p>
+
+
+
                         </div>
                 
                 </div>
