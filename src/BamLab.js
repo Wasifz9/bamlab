@@ -106,11 +106,9 @@ function BamLab(props) {
 
                 <button className="entryButton" style ={{pointerEvents: 'none', color: 'black' }}>SCROLL TO VIEW PROJECTS</button>
             </div>
-            <Fade> <div className="pageTitle" style={{ textAlign: 'center' }}>Projects</div></Fade>
-            <Fade up delay={500}> <div className="underline"></div></Fade>
 
             <div className="Page" id="extraCurr">
-            <Fade>   
+            <Fade up>   
                     <div className='extrasection' id = 'oneLine' style={{ backgroundColor: 'rgb(255,255,255)' , width: 70 + '%'}}>
                         <p className='subtitle'   style={{ textAlign: 'center'}} >
                             01. Data Analytics
@@ -136,7 +134,8 @@ function BamLab(props) {
                         <br />
                         <img src={Fig1} id='fig1' />
                     </div>
-
+                    </Fade>
+                    <Fade right delay={500}>
                     <div className='extrasection'>
                         <p className='subsubtitle'>
                             Diagnosing chronic low back pain: Created a tool for extracting knowledge from doctors chart notes for diagnosing chronic low backpain [Judd et al, 2018]. The tool implements a data analytic pipeline using a 3rd party script for anonymizing medical text data, CTAKES for extracting medical terms, and ensemble learning using a variety of machine learning models for disease diagnosis.                         </p>
@@ -153,7 +152,7 @@ function BamLab(props) {
 
 
                 </Fade>
-                <Fade right delay={500}>
+                <Fade left delay={500}>
 
                     <div className='extrasection' style={{ backgroundColor: 'rgb(255,255,255)' }}>
                         <p className='subtitle'>
@@ -176,13 +175,14 @@ function BamLab(props) {
 
 
                 </Fade>
-                <Fade left delay={500}>
+                    <Fade up> 
                     <div className='extrasection' id = 'oneLine' style={{ backgroundColor: 'rgb(255,255,255)' , width: 70 + '%'}}>
                         <p className='subtitle'   style={{ textAlign: 'center'}} >
                            02. NLP and Text Analytics
                       </p>
                     </div>
-
+                    </Fade>
+                    <Fade left delay={500}>
                     <div className='extrasection'>
                         <p className='subtitle'>
                         Query Expansion for Knowledge Extraction:
@@ -221,11 +221,13 @@ function BamLab(props) {
             </div>
 
             <div className="Page" id="extraCurr">
+            <Fade up> 
             <div className='extrasection' id = 'oneLine' style={{ backgroundColor: 'rgb(255,255,255)' , width: 70 + '%'}}>
                         <p className='subtitle'   style={{ textAlign: 'center'}} >
                            03. Cognitive Computing
                          </p>
             </div>
+            </Fade>
                 <Fade left delay={500}>
                     <div className='extrasection' style={{ backgroundColor: 'rgb(255,255,255)' }}>
                         <p className='subtitle'>

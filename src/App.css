@@ -510,7 +510,7 @@ p.info{
   left: 0;
   color: black;
   top: 0;
-  background: rgb(240, 240, 240);
+  background: rgb(214, 214, 214);
   transition: width ease-out 1s;
   overflow: hidden;
 }
