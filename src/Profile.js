@@ -25,10 +25,11 @@ function Profile(props) {
                         <li onClick={() => animateOut('bamlab')}>
                             BamLab
                         </li>
+                        <a href = "https://www.cs.queensu.ca/" target="_blank">
                         <li>
                             School of Computing
-                            </li>
-
+                        </li>
+                        </a>
                     </ul> }
                 </Fade>
                 <div className = 'Page'>
@@ -77,11 +78,11 @@ function Profile(props) {
                 </div>
 
 
-        
+                
                 <div className="Page" id="workExp">
                 <div className="sectionTitle">01. Administrative Info </div> 
                         <div className="underline"></div>
-
+                        <Fade up> 
                         <div className='section'>
                             <p className='subtitle'>
                                 Cognitive Science Program
@@ -99,7 +100,8 @@ function Profile(props) {
 
 
                         </div>
-
+                        </Fade>
+                        <Fade up> 
                         <div className='section'>
                             <p className='subtitle'>
                                 Teaching
@@ -122,7 +124,8 @@ function Profile(props) {
 
 
                         </div>
-
+                        </Fade>
+                        <Fade up> 
                         <div className='section'>
                             <p className='subtitle'>
                                 Previously Taught
@@ -147,12 +150,13 @@ function Profile(props) {
 
 
                         </div>
+                        </Fade>
                 
                 </div>
                 <div className="Page" id="workExp">
                 <div className="sectionTitle">02. Awards and Funding </div> 
                         <div className="underline"></div>
-
+                        <Fade up> 
                         <div className='section'>
                             <p className='subtitle'>
                                 Awards
@@ -171,7 +175,8 @@ function Profile(props) {
 
 
                         </div>
-
+                        </Fade> 
+                        <Fade up> 
                         <div className= 'section' >
                             <p className='subtitle'>
                                 Funding
@@ -193,18 +198,15 @@ function Profile(props) {
                                 <li>IBM CRDC and SOSCIP (Southern Ontario Smart Computing Innovation Platform) Funding, collaborator: Gnowit and IBM, 2017</li>
                                 <li>Research Initiation Grant, School of Computing, Queen's University, 2017</li>
                         </p>
-
-
-
                         </div>
-                
+                        </Fade> 
                 </div>
                 
             
 
-
+               
             </div> 
-
+            
         );
    
 
