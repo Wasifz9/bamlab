@@ -282,7 +282,7 @@
 }
 
 .researchGoalsContainer{
-  height:100vh;
+  min-height:100vh;
   background-color:rgb(22, 22, 22);
   position: absolute;
   left: 0;
@@ -505,6 +505,7 @@ p.info{
   box-shadow: -1px 10px 44px -12px rgba(53, 53, 53, 0.31);
   z-index: 1;
 }
+
 .navigation p{
   transition: all ease 0.5s;
   font-weight: bold;
