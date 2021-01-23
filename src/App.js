@@ -35,9 +35,9 @@ function App() {
                 <div className= {Active == '' ? "home reveal": "home"}>
 
                     <div className='circleoutline'>
-                        <Fade> <div className="pageTitle" style = {{padding:0}}>BamLab</div></Fade>
+                        <Fade> <div className="pageTitle">BamLab</div></Fade>
                         <Fade up delay={250}>
-                            <div className="underline"></div>
+                            <div className="underline" style = {{width:50 + '%'}}></div>
                         </Fade>
                     </div>
 

@@ -61,7 +61,7 @@ function Profile(props) {
                     </div>
                     
                     <div className = "profInfo" style = {{textAlign: 'left'}}> 
-                        <p className='subtitle' style = {{textAlign: 'left'}}>
+                        <p className='subtitle' style = {{textAlign: 'center'}}>
                             Director of BamLab 
                         </p>
                         <p className='jobtitle'>
@@ -83,7 +83,7 @@ function Profile(props) {
 
                 
                 <div className="Page" id="workExp">
-                <div className='extrasection' id = 'oneLine' style={{ backgroundColor: 'rgb(255,255,255)' , width: 40 + '%'}}>
+                <div className='extrasection' id = 'oneLine' style={{ backgroundColor: 'rgb(255,255,255)' , width: 70 + '%'}}>
                         <p className='subtitle'   style={{ textAlign: 'center'}} >
                             01. Administrative Info
                       </p>
@@ -160,7 +160,7 @@ function Profile(props) {
                 
                 </div>
                 <div className="Page" id="workExp">
-                <div className='extrasection' id = 'oneLine' style={{ backgroundColor: 'rgb(255,255,255)' , width: 40 + '%'}}>
+                <div className='extrasection' id = 'oneLine' style={{ backgroundColor: 'rgb(255,255,255)' , width: 70 + '%'}}>
                         <p className='subtitle'   style={{ textAlign: 'center'}} >
                             02. Awards and Funding
                       </p>
