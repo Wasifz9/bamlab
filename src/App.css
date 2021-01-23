@@ -123,7 +123,7 @@
     text-align: center;
   }
   .sectionTitle{
-    font-size: calc(22px + 6 * ((100vw - 320px) / 680));
+    font-size: calc(18px + 6 * ((100vw - 320px) / 680));
     margin: 30px 20px;
     margin-bottom: 5px;
     text-align: center;
@@ -174,19 +174,7 @@
   }
 }
 
-.section{
-  display:flex;
-  flex-direction: column;
-  padding: 30px;
-  margin: 20px 0px;
-  -webkit-box-shadow: -1px 10px 44px -12px rgba(158,204,235,0.31);
-  -moz-box-shadow: -1px 10px 44px -12px rgba(158,204,235,0.31);
-  box-shadow: -1px 10px 44px -12px rgba(0,0,0,0.31);
-  border-color: white;
-  border-radius: 10px;
-  width: 70%;
-  background-color: white;
-}
+
 .jobtitle{
   font-weight: 600;
 }
@@ -235,7 +223,11 @@
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
   }
 }
-
+@media screen and (max-width: 600px){
+  .profileSection{
+    flex-wrap: wrap;
+  }
+}
 .extrasection{
   display:flex;
   flex-direction: column;
@@ -335,6 +327,7 @@
   flex-grow: 1;
   animation: fadeInUp 2s forwards;
   animation-delay:1s;
+  max-width:250px;
 }
 
 .mainNav{
@@ -401,9 +394,33 @@ a{
   box-shadow: -1px 10px 44px -12px rgba(0,0,0,0.31);
   border-color: white;
   border-radius: 10px;
-  max-width: 900px;
   animation: fadeInUp forwards 1s 1.2s;
   background: white;
+  margin: 20px 0px;
+  max-width: 900px;
+
+}
+
+.profInfo{
+  display: flex;
+  flex-grow: 1;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section{
+  display:flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 20px 0px;
+  -webkit-box-shadow: -1px 10px 44px -12px rgba(158,204,235,0.31);
+  -moz-box-shadow: -1px 10px 44px -12px rgba(158,204,235,0.31);
+  box-shadow: -1px 10px 44px -12px rgba(0,0,0,0.31);
+  border-color: white;
+  border-radius: 10px;
+  width: 70%;
+  background-color: white;
 }
 
 #profilePic{
@@ -458,7 +475,6 @@ a{
   font-weight: bold;
   color: black;
   transition-duration: 0.5s;
-  z-index: 0;
 }
 
 
@@ -487,7 +503,7 @@ p.info{
   position: fixed;
   border-bottom:rgba(216, 216, 216, 0.336) solid 0.5px;
   box-shadow: -1px 10px 44px -12px rgba(53, 53, 53, 0.31);
-
+  z-index: 1;
 }
 .navigation p{
   transition: all ease 0.5s;
@@ -538,7 +554,6 @@ p.info{
   position:fixed;
   font-weight: bold;
   color: rgb(233, 33, 33);
-  z-index: 0;
 }
 
 .BamMenu li{

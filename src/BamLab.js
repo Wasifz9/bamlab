@@ -79,14 +79,14 @@ function BamLab(props) {
             <div className='Page' id = 'landing'>
                 <div className='profileSection' id = "startPoint" >
 
-                    <div className="menuList" style={{ textAlign: 'left' }}>
-                        <p className='subtitle' style={{ textAlign: 'left' }}>
+                    <div>
+                        <p className='subtitle' style={{ textAlign: 'center' }}>
                             BamLab
                             </p>
                         <p className='jobtitle' style={{ textAlign: 'center' }}>
                             Big-Data Analytics and Management Laboratory
                             </p>
-                        <p className='subsubtitle'>
+                        <p className='subsubtitle' style={{ textAlign: 'center' }}>
                             633 Goodwin Hall
                             </p>
                         <br />
@@ -105,11 +105,13 @@ function BamLab(props) {
                                 <li>A cover letter stating the position in which you are interested</li>
                             <li>Your competitive qualifications and eligibility to join the group</li>
                             <li>A resume and sample of your best written work!</li>
+
+                        
                         </p>
                     </div>
                 </div>
 
-                <button className="entryButton" style ={{pointerEvents: 'none', color: 'black' }}>SCROLL TO VIEW PROJECTS</button>
+                <p style = {{color: 'black', fontWeight: '700'}}>SCROLL TO VIEW PROJECTS</p>
             </div>
 
             <div className="Page" id="extraCurr">

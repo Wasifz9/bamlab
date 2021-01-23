@@ -17,6 +17,7 @@ function Profile(props) {
         
         return (
             <div id = "innerProfContainer" className = { props.active == 'profile' ? "innerProfContainer reveal" : "innerProfContainer"}> 
+                
                 <Fade top cascade>
                    {props.active == 'profile' && <ul className= "NavMenu">
                         <li onClick={() => animateOut('')}>
@@ -48,9 +49,9 @@ function Profile(props) {
                                 <li>
                                     633 Goodwin Hall
                                     </li>
-                                <li>
+                                    <a href = "mailto:farhana@cs.queensu.ca"> <li>
                                     farhana@cs.queensu.ca
-                                    </li>
+                                    </li></a>
                                 <li>
                                     Queens University
                                     </li>
@@ -60,7 +61,7 @@ function Profile(props) {
                      
                     </div>
                     
-                    <div className = "menuList" style = {{textAlign: 'left'}}> 
+                    <div className = "profInfo" style = {{textAlign: 'left'}}> 
                         <p className='subtitle' style = {{textAlign: 'left'}}>
                             Director of BamLab 
                         </p>
