@@ -20,7 +20,7 @@ function transitionPage(props) {
             
             <div className="transitionpage">
                 <div className="innerContainer">
-                    <div className="pageTitle">Research Goals </div>
+                    <div className="pageTitle" id = 'researchText'>Research Goals </div>
                     <div className="underline"></div>
                     <p className="jobtitle">01. Address specific data analytic problems and predictive analytics in a variety of data domains.</p>
                     <p className="jobtitle">02. Develop/Implement machine learning models to develop autonomous systems, decision support tools and big data management solutions.</p>

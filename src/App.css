@@ -146,6 +146,9 @@
   .profileSection{
     width:70%;
   }
+  #researchText{
+    font-size: calc(30px + 6 * ((100vw - 320px) / 680));
+  }
 
 }
 
@@ -179,7 +182,7 @@
 
 
 .jobtitle{
-  font-weight: 600;
+  font-weight: 700;
 }
 .subtitle {
   font-size: 30px;

@@ -43,5 +43,6 @@ html,body
     justify-content: center;
     align-items: center;
     padding: 0;
+    text-rendering:optimizeLegibility;
 }
 
