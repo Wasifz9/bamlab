@@ -18,6 +18,7 @@ function Profile(props) {
         return (
             <div id = "innerProfContainer" className = { props.active == 'profile' ? "innerProfContainer reveal" : "innerProfContainer"}> 
                 
+                <div className = "navbackground" style = {{height: 12 + 'vh'}}>
                 <Fade top cascade>
                    {props.active == 'profile' && <ul className= "NavMenu">
                         <li onClick={() => animateOut('')}>
@@ -29,16 +30,14 @@ function Profile(props) {
                         <li onClick={() => animateOut('bamlab')}>
                             BamLab
                         </li>
-                        <a href = "https://www.cs.queensu.ca/" target="_blank">
-                        <li>
-                            School of Computing
-                        </li>
-                        </a>
                     </ul> }
                 </Fade>
+                <Fade> <div className="jobtitle" style = {{padding:0}}>Profile</div></Fade>
+                </div>
+
                 <div className = 'Page'>
                 <div className='profileSection' id = 'startPoint1'>
-                    <div className = "menuList" style = {{marginRight: 20 + 'px'}} >
+                    <div className = "menuList">
                         <img id = "profilePic" src = {Pic}/> 
                 
         
@@ -68,7 +67,7 @@ function Profile(props) {
                         <p className='jobtitle'>
                             Associate Professor
                         </p>
-                        <p className='subsubtitle'>
+                        <p style = {{textAlign: 'center'}}className='subsubtitle'>
                             Coordinator and Advisor, Cognitive Science Program
                         </p>
                         <br/>
@@ -84,8 +83,11 @@ function Profile(props) {
 
                 
                 <div className="Page" id="workExp">
-                <div className="sectionTitle">01. Administrative Info </div> 
-                        <div className="underline"></div>
+                <div className='extrasection' id = 'oneLine' style={{ backgroundColor: 'rgb(255,255,255)' , width: 40 + '%'}}>
+                        <p className='subtitle'   style={{ textAlign: 'center'}} >
+                            01. Administrative Info
+                      </p>
+                    </div>
                         <Fade up> 
                         <div className='section'>
                             <p className='subtitle'>
@@ -158,8 +160,11 @@ function Profile(props) {
                 
                 </div>
                 <div className="Page" id="workExp">
-                <div className="sectionTitle">02. Awards and Funding </div> 
-                        <div className="underline"></div>
+                <div className='extrasection' id = 'oneLine' style={{ backgroundColor: 'rgb(255,255,255)' , width: 40 + '%'}}>
+                        <p className='subtitle'   style={{ textAlign: 'center'}} >
+                            02. Awards and Funding
+                      </p>
+                    </div>
                         <Fade up> 
                         <div className='section'>
                             <p className='subtitle'>

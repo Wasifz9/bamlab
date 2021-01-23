@@ -30,7 +30,7 @@ function BamLab(props) {
 
     return (
         <div id="bamPage" className={props.active == 'bamlab' ? "reveal" : ""}>
-
+            <div className = 'navbackground'>
             <Fade top cascade>
                 {props.active == 'bamlab' && <ul className="NavMenu">
                     <li onClick={() => animateOut('')}>
@@ -42,22 +42,14 @@ function BamLab(props) {
                     <li onClick={() => animateOut('profile')}>
                         Farhana Zulkernine
                         </li>
-                    <a href = "https://www.cs.queensu.ca/" target="_blank">
-                    <li>
-                        School of Computing
-                    </li>
-                    </a>
 
                 </ul>}
             </Fade>
 
+            <Fade> <div className="jobtitle" style = {{padding:0}}>BamLab</div></Fade>
             <Fade top cascade>
                 {props.active == 'bamlab' && <ul className="BamMenu">
-                    <li style={{ color: 'black', fontSize: 22 + 'px', pointerEvents: 'none' }}>
-                        BamLab
-                        </li>
-                      
- 
+                       
                         <a href="https://research.cs.queensu.ca/home/farhana/bam-lab/people/" target="_blank">
                         <li>
                             People
@@ -73,10 +65,21 @@ function BamLab(props) {
                             Wiki
                         </li>
                         </a>
+                        <a href = "https://www.cs.queensu.ca/" target="_blank">
+                        <li>
+                            School of Computing
+                        </li>
+                        </a>
 
                 </ul>}
             </Fade>
-            <div className='Page' id = 'landing'>
+
+
+            </div>
+
+
+
+            <div className='Page' id = 'landing' style = {{marginTop: 5 + 'vh'}}>
                 <div className='profileSection' id = "startPoint" >
 
                     <div>
