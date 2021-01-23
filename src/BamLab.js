@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import Pic from './profilePic.jpg';
 import Fig1 from './fig1.jpg';
 import Fig2 from './fig2.jpg';
@@ -23,6 +23,11 @@ function BamLab(props) {
             props.setActive(page)
         }, 650)
     }
+
+    useEffect(() => {
+        window.scrollTo(document.getElementById("startPoint").scrollHeight, 0);
+    }); 
+
     return (
         <div id="bamPage" className={props.active == 'bamlab' ? "reveal" : ""}>
 
@@ -72,7 +77,7 @@ function BamLab(props) {
                 </ul>}
             </Fade>
             <div className='Page' id = 'landing'>
-                <div className='profileSection' >
+                <div className='profileSection' id = "startPoint" >
 
                     <div className="menuList" style={{ textAlign: 'left' }}>
                         <p className='subtitle' style={{ textAlign: 'left' }}>
@@ -228,7 +233,7 @@ function BamLab(props) {
                          </p>
             </div>
             </Fade>
-                <Fade left delay={500}>
+                <Fade up delay={500}>
                     <div className='extrasection' style={{ backgroundColor: 'rgb(255,255,255)' }}>
                         <p className='subtitle'>
                         Identifying Reportable Diseases for Ministry of Health and Long Term Care
@@ -244,6 +249,7 @@ function BamLab(props) {
                         <p className='jobtitle'>
                         Reviewed state-of-the-art speech recognition systems, proposed a taxonomy and developed a speech enabled e-commerce website to increase accessibility of such websites using IBM Watson speech-to-text API and cloud services [Kandhari et al., 2018].                        </p>
                     </div>
+
                     <div className='extrasection' style={{ backgroundColor: 'rgb(255,255,255)' }}>
                         <p className='subtitle'>
                         Autonomous Cars
@@ -263,6 +269,8 @@ function BamLab(props) {
                         <br />
                         <img src={Fig5} id='fig1' />
                     </div>
+                    </Fade>
+                    <Fade left delay={500}>
                     <div className='extrasection'>
                     <p className='subsubtitle'>
                         Autonomous Cars </p>

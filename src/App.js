@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect} from 'react';
 import { Fade, Reveal } from 'react-reveal';
 import TransitionPage from "./transitionPage.js";
 import Profile from "./Profile.js";
@@ -8,6 +8,7 @@ import BamLab from "./BamLab.js";
 function App() {
     const [Active, setActive] = useState('');
     const heightRef = useRef();
+
     return (
         <div className="App">
             <div className="Page" id="landing">

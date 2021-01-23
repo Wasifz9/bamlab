@@ -1,4 +1,4 @@
-import React , { useState }  from 'react'
+import React , { useState, useEffect, useLayoutEffect}  from 'react'
 import Pic from './profilePic.jpg';
 import { Fade } from 'react-reveal';
 function Profile(props) {
@@ -11,6 +11,9 @@ function Profile(props) {
         },650)
     }
 
+    useEffect(() => {
+        window.scrollTo(document.getElementById("startPoint1").scrollHeight, 0);
+    }); 
         
         return (
             <div id = "innerProfContainer" className = { props.active == 'profile' ? "innerProfContainer reveal" : "innerProfContainer"}> 
@@ -33,7 +36,7 @@ function Profile(props) {
                     </ul> }
                 </Fade>
                 <div className = 'Page'>
-                <div className='profileSection'>
+                <div className='profileSection' id = 'startPoint1'>
                     <div className = "menuList" style = {{marginRight: 20 + 'px'}} >
                         <img id = "profilePic" src = {Pic}/> 
                 
