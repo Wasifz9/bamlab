@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/bamlab/static/css/main.f51fc724.chunk.css",
-    "main.js": "/bamlab/static/js/main.1bd1b707.chunk.js",
-    "main.js.map": "/bamlab/static/js/main.1bd1b707.chunk.js.map",
+    "main.css": "/bamlab/static/css/main.5ef7e5c2.chunk.css",
+    "main.js": "/bamlab/static/js/main.32b64964.chunk.js",
+    "main.js.map": "/bamlab/static/js/main.32b64964.chunk.js.map",
     "runtime-main.js": "/bamlab/static/js/runtime-main.29cc4bd7.js",
     "runtime-main.js.map": "/bamlab/static/js/runtime-main.29cc4bd7.js.map",
     "static/js/2.310cb9b7.chunk.js": "/bamlab/static/js/2.310cb9b7.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.5150d15c.chunk.js": "/bamlab/static/js/3.5150d15c.chunk.js",
     "static/js/3.5150d15c.chunk.js.map": "/bamlab/static/js/3.5150d15c.chunk.js.map",
     "index.html": "/bamlab/index.html",
-    "static/css/main.f51fc724.chunk.css.map": "/bamlab/static/css/main.f51fc724.chunk.css.map",
+    "static/css/main.5ef7e5c2.chunk.css.map": "/bamlab/static/css/main.5ef7e5c2.chunk.css.map",
     "static/js/2.310cb9b7.chunk.js.LICENSE.txt": "/bamlab/static/js/2.310cb9b7.chunk.js.LICENSE.txt",
     "static/media/fig1.37a239a7.jpg": "/bamlab/static/media/fig1.37a239a7.jpg",
     "static/media/fig2.4c29d634.jpg": "/bamlab/static/media/fig2.4c29d634.jpg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.29cc4bd7.js",
     "static/js/2.310cb9b7.chunk.js",
-    "static/css/main.f51fc724.chunk.css",
-    "static/js/main.1bd1b707.chunk.js"
+    "static/css/main.5ef7e5c2.chunk.css",
+    "static/js/main.32b64964.chunk.js"
   ]
 }
